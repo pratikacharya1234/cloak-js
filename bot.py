@@ -19,11 +19,14 @@ while True:
 
     if query in ('syntax'):
         print(syntax_list)
+
     if query in syntax_list[0]:
-        chat = input('Hey, How can i assist you today')
+        chat = input('Hey, How can i assist you today???')
+
     elif query in entry_conditions:
         print("What's your problem?")
         break
+    
     elif query in exit_conditions:
         print("Goodbye!")
         break
