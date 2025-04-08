@@ -1,32 +1,38 @@
-
+import pywhatkit as pwk
 
 # Define conditions
-entry_conditions = (":begin", "start", "go")
-exit_conditions = (":q", "quit", "exit")
+entry_conditions = (":begin", "start")
+exit_conditions = ( "quit", "exit")
 
-#syntax list to use bot
-syntax_list = {
-    'start': "To Start Bot",
-    ':q': "To Exit Bot",
-    'create' : "To Create a new Chat with Bot",
-    'submit' : "To Submit a chat",
-    'exit' : "To exit bot"
+#services list to use bot
+services_list = {
+   '1': "Auto WhatsApp Message",
 }
+def main():
 
-while True:
-    print("Chatbot is ready to chat! Type 'syntax' to see the syntax list.")
-    query = input("> ")
+    print("Welcome to bot!")
+    print("""Available Services:
+    1. Auto WhatsApp Message"
+    """) 
+    while True:
+        chat = input('Hey, How can I assist you today? (Type "service" to view services list) ')
 
-    if query in ('syntax'):
-        print(syntax_list)
+        if chat == "service":
+            print("Here are the available commands:")
+            print(services_list)
+            
+        chat = input('Please enter the number of the service you want to use: ')
+        if chat in services_list:
+            print(f"{chat}: {services_list[chat]}")
+            if chat == '1':
+                phone_number = input("Enter the phone number (with country code): ")
+                message = input("Enter the message you want to send: ")
+                hour = int(input("Enter the hour (24-hour format): "))
+                minute = int(input("Enter the minute: "))
+                pwk.sendwhatmsg(phone_number, message, hour, minute)
+                print("Message sent successfully!")
+        else:
+            print("Your input did not match any predefined commands. Please try again.")
 
-    if query in syntax_list[0]:
-        chat = input('Hey, How can i assist you today???')
-
-    elif query in entry_conditions:
-        print("What's your problem?")
-        break
-    
-    elif query in exit_conditions:
-        print("Goodbye!")
-        break
+if __name__ == "__main__":
+    main()
