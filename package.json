@@ -1,6 +1,6 @@
 {
   "name": "@pratik242/cloak-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A powerful frontend code protector: obfuscates JavaScript, injects anti-tamper runtime, locks domains, and supports Vite/Next.js/Parcel plugins.",
   "main": "lib/obfuscate.js",
   "bin": {
