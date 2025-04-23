@@ -1,6 +1,6 @@
 {
-    "name": "cloak",
-    "version": "1.0.1",
+    "name": "jscloak",
+    "version": "1.0.2",
     "description": "A powerful frontend code protector: obfuscates JavaScript, injects anti-tamper runtime, locks domains, and supports Vite/Next.js/Parcel plugins.",
     "main": "lib/obfuscate.js",
     "bin": {
