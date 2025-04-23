@@ -1,50 +1,49 @@
 {
-    "name": "alter/cloak",
-    "version": "1.0.0",
-    "description": "A powerful frontend code protector: obfuscates JavaScript, injects anti-tamper runtime, locks domains, and supports Vite/Next.js/Parcel plugins.",
-    "main": "lib/obfuscate.js",
-    "bin": {
-      "cloak": "bin/cli.js"
-    },
-    "scripts": {
-      "start": "node bin/cli.js",
-      "test": "echo \"No test specified\" && exit 0"
-    },
-    "keywords": [
-      "javascript",
-      "obfuscator",
-      "frontend-protection",
-      "secure-js",
-      "vite-plugin",
-      "next-plugin",
-      "parcel-plugin",
-      "wasm",
-      "tamper-protection",
-      "domain-lock"
-    ],
-    "author": "Pratik Acharya",
-    "license": "MIT",
-    "dependencies": {
-      "chalk": "^5.3.0",
-      "commander": "^11.0.0",
-      "javascript-obfuscator": "^4.0.0"
-    },
-    "type": "commonjs",
-    "exports": {
-      "./vite": "./plugins/vite-plugin-cloak.js",
-      "./next": "./plugins/next-plugin-cloak.js",
-      "./wasm": "./lib/wasm-loader.js"
-    },
-    "engines": {
-      "node": ">=16.0.0"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/pratikacharya1234/cloak-js"
-    },
-    "bugs": {
-      "url": "https://github.com/pratikacharya1234/cloak-js/issues"
-    },
-    "homepage": "https://github.com/pratikacharya1234/cloak-js#readme"
-  }
-  
+  "name": "@pratik242/cloak-js",
+  "version": "1.0.0",
+  "description": "A powerful frontend code protector: obfuscates JavaScript, injects anti-tamper runtime, locks domains, and supports Vite/Next.js/Parcel plugins.",
+  "main": "lib/obfuscate.js",
+  "bin": {
+    "cloak": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "keywords": [
+    "javascript",
+    "obfuscator",
+    "frontend-protection",
+    "secure-js",
+    "vite-plugin",
+    "next-plugin",
+    "parcel-plugin",
+    "wasm",
+    "tamper-protection",
+    "domain-lock"
+  ],
+  "author": "Pratik Acharya",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "javascript-obfuscator": "^4.0.0"
+  },
+  "type": "commonjs",
+  "exports": {
+    "./vite": "./plugins/vite-plugin-cloak.js",
+    "./next": "./plugins/next-plugin-cloak.js",
+    "./wasm": "./lib/wasm-loader.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pratikacharya1234/cloak-js"
+  },
+  "bugs": {
+    "url": "https://github.com/pratikacharya1234/cloak-js/issues"
+  },
+  "homepage": "https://github.com/pratikacharya1234/cloak-js#readme"
+}
