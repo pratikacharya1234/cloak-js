@@ -14,7 +14,7 @@ A powerful JavaScript code protection tool for frontend apps. Obfuscate, lock to
 ## 📦 Installation
 
 ```bash
-npm install -g cloak-js
+npm i @pratik242/cloak-js
 ```
 
 ## 💻 CLI Usage
